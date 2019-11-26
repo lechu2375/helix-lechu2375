@@ -12,7 +12,9 @@ local bands = { --taka tablica, żeby nie zapierdalać po tabelach itemku
 	["white"] = {Color(221, 221, 221),"Biała opaska lojalisty"},
 	["gold"] = {Color(241, 196, 15),"Złota opaska lojalisty"},
 	["violet"] = {Color(142, 68, 173),"Fioletowa opaska lojalisty"}
-}
+} --why I have created table instead of declaring everything in item table? I just didn't know how character tooltip works, I wasn't sure if 
+--(..)tooltip updates every tick.. 
+
 
 function PLUGIN:PopulateCharacterInfo(client, character, tooltip)
 	local band = client:GetNW2String("band") --string z typem opaski, czyli można rzec, że kolorem
