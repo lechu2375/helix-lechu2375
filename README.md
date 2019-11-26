@@ -1,2 +1,2 @@
 # helix-lechu2375
-Free public, not for use on #read readme#
+Plugins released to public, for use everywhere excluding: __POLISH__ servers, associated with zaku,guziec or kaktusownia community without permission.
