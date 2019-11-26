@@ -1,3 +1,4 @@
+## any code improvements will be appreciated <br>
 HOW TO MAKE NEW BAND?<br>
 MAKE AN ITEM, AND SET ITEM.BAND TO PROPER STRING<br>
 like: ITEM.band = "blue"<br>
