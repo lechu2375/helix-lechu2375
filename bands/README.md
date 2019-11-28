@@ -4,6 +4,6 @@ How to make new band?<br>
 Like: ITEM.band = "blue"<br>
 Now add key and value to the table inside cl_hooks.lua<br>
 like:<br>
-[string identificator={Color Color,string description}] - just follow the examples<br>
+[String identificator]={Color Color,String description} - just follow the examples<br>
 <img src="https://media.discordapp.net/attachments/641212600306368513/647145305787203607/opaski.png">
 
