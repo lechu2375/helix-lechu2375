@@ -17,7 +17,7 @@ local bands = { --taka tablica, żeby nie zapierdalać po tabelach itemku
 
 
 function PLUGIN:PopulateCharacterInfo(client, character, tooltip)
-	local band = client:GetNW2String("band") --string z typem opaski, czyli można rzec, że kolorem
+	local band = client:GetNW2String("band",false) --string z typem opaski, czyli można rzec, że kolorem
 	if band then --jako, że po zdjęciu banda NWString jest nilem to można zajebać takiego checka
 		local panel = tooltip:AddRowAfter("name", "band")
 		panel:SetBackgroundColor(bands.band[1]) 
