@@ -23,8 +23,8 @@ function PLUGIN:PopulateCharacterInfo(client, character, tooltip)
 			error("Table for "..band.." band isn't properly declared.",1 )
 		end
 		local panel = tooltip:AddRowAfter("name", "band")
-		panel:SetBackgroundColor(bands.band[1]) 
-		panel:SetText(bands.band[2])
+		panel:SetBackgroundColor(bands[band][1]) 
+		panel:SetText(bands[band][2])
 		panel:SizeToContents()
     end
 end	
