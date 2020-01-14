@@ -88,6 +88,5 @@ ITEM.functions.EquipUn = { -- sorry, for name order.
 
 function ITEM:RemoveBand(client)
 	self:SetData("equip", false)
-	self:OnUnequipped()
     client:SetNW2String("band",nil)
 end
