@@ -1,5 +1,5 @@
-PLUGIN.name = "Edycja czatu"
-PLUGIN.desc = "Kolor dla /it, dodaje odpowiednik tej komendy na /do także"
+PLUGIN.name = "IT color"
+PLUGIN.desc = "New color and  syntax  for /it command"
 PLUGIN.license =  "MIT not for use on Kaktusownia opensource.org/licenses/MIT"
 
 function PLUGIN:InitializedChatClasses()
