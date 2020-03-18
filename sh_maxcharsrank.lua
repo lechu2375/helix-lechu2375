@@ -19,7 +19,7 @@ function PLUGIN:GetMaxPlayerCharacter(client)
         return pluginTable[client:GetUserGroup()]
     end
 end
-////////////////////////////////EXAMPLES
+//EXAMPLES\\
 /*
 addRanked("user",2)
 addRanked("vip",3)
@@ -28,7 +28,6 @@ addRanked("superadmin",4)
 just copy the function and change arguments to whatever you want.
 
 The syntax is: addRanked(string userGroup,int maxChars)
-
 */
 //PASTE UNDER THERE NEW DECLARATIONS
 addRanked("superadmin",4)
