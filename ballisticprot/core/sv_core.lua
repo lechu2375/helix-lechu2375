@@ -43,7 +43,7 @@ function  PLUGIN:ScalePlayerDamage(ply,hitgroup,dmginfo)
     local char = ply:GetCharacter()
     local damage = dmginfo:GetDamage()
     if damage<1 then return true end
-    if hitgroup  == HITGROUP_RIGHTARM or hitgroup  == HITGROUP_LEFTARM then
+    if hitgroup  == HITGROUP_RIGHTARM or hitgroup  == HITGROUP_LEFTARM then  //small fix for broken models, hits in hands acts like hit in chest
         hitgroup = HITGROUP_CHEST
     end
     local item = char:getArmorItemByHG(hitgroup)

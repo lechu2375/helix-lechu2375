@@ -1,4 +1,4 @@
-ITEM.name = "Płyta pancerza"
+ITEM.name = "Ballistic plate"
 ITEM.model = Model("models/gibs/metal_gib4.mdl")
 ITEM.description = "Daje przewagę jak cie cos  jebnie"
 ITEM.protectionlevel =  1
@@ -20,15 +20,15 @@ function ITEM:GetDescription()
 	local durability = self:GetData("durability") or basicDur
 	local toadd = ""
 	if durability<=basicDur*.2 then
-		toadd="Zniszczona"
+		toadd="Destroyed"
 	elseif durability<=basicDur*.5 then
-		toadd="Uszkodzona"
+		toadd="Damaged"
 	elseif durability<=basicDur*.75 then
-		toadd="Używana"
+		toadd="Used"
 	else 
-		toadd="Nowa"
+		toadd="New"
 	end
-	return dDesc.."\nStan: "..toadd.."\nKlasa:"..self.protectionlevel
+	return dDesc.."\nStatus: "..toadd.."\nClass:"..self.protectionlevel
 end
 
 ITEM.functions.EquipUn = { -- sorry, for name order.
@@ -61,7 +61,7 @@ ITEM.functions.Equip = {
 				local itemTable = ix.item.instances[v.id]
 
 				if (v.base == item.base and itemTable:GetData("equip")) then
-					client:Notify("Płyta jest już założona")
+					client:Notify("Plate already equipped")
 					return false
 				end
 			end
