@@ -1,6 +1,6 @@
 do
 ix.chat.Register("try", {
- 	format = "((Próba))%s %s",
+ 	format = "((Attempt))%s %s",
  	GetColor = function() return Color(140, 122, 230)end,
  	CanHear = ix.config.Get("chatRange", 280) * 2,
  	prefix = {},
