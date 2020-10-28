@@ -56,7 +56,7 @@ function  PLUGIN:ScalePlayerDamage(ply,hitgroup,dmginfo)
                 item:SetData("durability",math.max(0,durability-damage))
                 if math.random(1,100)>=40 then
                     damage=math.max(0,damage-armorLevels[class])
-                    ply:EmitSound("physics\metal\metal_solid_impact_bullet"..math.random(1,4)..".wav",70)
+                    ply:EmitSound("physics/metal/metal_solid_impact_bullet"..math.random(1,4)..".wav",70)
                     
                     
                 end
@@ -64,7 +64,7 @@ function  PLUGIN:ScalePlayerDamage(ply,hitgroup,dmginfo)
             else --dmg mniejszy od ochronki
                 item:SetData("durability",math.max(0,durability-damage))
                 damage=math.max(0,damage-armorLevels[class])
-                ply:EmitSound("physics\metal\metal_solid_impact_bullet"..math.random(1,4)..".wav",70)
+                ply:EmitSound("physics/metal/metal_solid_impact_bullet"..math.random(1,4)..".wav",70)
                 
                 
             end
@@ -73,7 +73,7 @@ function  PLUGIN:ScalePlayerDamage(ply,hitgroup,dmginfo)
             if math.random(1, durability)>math.random(1,item.protectionlevel * 100) then
                 
                 damage=math.max(0,damage-armorLevels[class])
-                ply:EmitSound("physics\metal\metal_solid_impact_bullet"..math.random(1,4)..".wav",70)
+                ply:EmitSound("physics/metal/metal_solid_impact_bullet"..math.random(1,4)..".wav",70)
                 
                 
             end
