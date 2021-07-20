@@ -9,7 +9,7 @@ ix.char.RegisterVar("masked", {
     bNoDisplay = true
 })
 
-function PLUGIN:GetCharacterName(speaker, chatType)
+function PLUGIN:GetCharacterName(speaker)
 
     if(speaker:GetCharacter():GetMasked()) then
         local SteamID = speaker:SteamID64()
