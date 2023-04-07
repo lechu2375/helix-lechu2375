@@ -1,7 +1,7 @@
-local ItemsToSpawn= {"smg","paper","soda"} //itemy do respienie ogólem
-local allowedmodels = {"models/props_wasteland/controlroom_storagecloset001a.mdl"} // skrzynki z takimi modelami mogą otrzymać loot
+local ItemsToSpawn= {"smg","paper","soda"} //items to spawn
+local allowedmodels = {"models/props_wasteland/controlroom_storagecloset001a.mdl"} // containers with these model will be able to get random loot
 local customItems = {}
-customItems["models/props_junk/wood_crate001a_damaged.mdl"] = {"smg","soda"} // skrzynki z takimi modelami będą miały swoją unikatową pulę dropu
+customItems["models/props_junk/wood_crate001a_damaged.mdl"] = {"smg","soda"} // unique loot pool pel model
 
 
 
