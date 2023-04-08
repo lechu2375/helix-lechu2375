@@ -26,7 +26,7 @@ if(SERVER) then
     function PLUGIN:OnCharacterDisconnect(client) 
         net.Start("ixTimedText")
         net.WriteVector(client:GetPos()+Vector(0,0,50))
-        net.WriteString(client:GetName().." opuścił serwer")
+        net.WriteString(client:GetName().." has left the server")
         net.WriteUInt(50, 10)
         net.Broadcast()
     end
@@ -38,7 +38,7 @@ if(CLIENT) then
     PLUGIN.DeathTexts = {}
 
     function AddTimedText(position,text,lifetime)
-        PLUGIN.DeathTexts[position.x] = {position = position,text=text or "Brak tekstu",lifetime = lifetime or 10}
+        PLUGIN.DeathTexts[position.x] = {position = position,text=text or "No text",lifetime = lifetime or 10}
         timer.Simple(lifetime or 10, function()
             PLUGIN.DeathTexts[position.x] = nil
         end)
